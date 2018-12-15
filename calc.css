@@ -1,0 +1,17 @@
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4,20px);
+
+}
+.digits{
+    display: grid;
+    grid-template-columns: repeat(4,20px);
+}
+div{
+    margin: 2px;
+}
+button{
+    margin: 2px;
+    padding: 10px;
+}
