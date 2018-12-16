@@ -37,5 +37,20 @@ for(let i = 0; i<10; i++){
     let temp = document.createElement('button');
     temp.setAttribute('class', 'digit ' + i)
     temp.textContent = " " + i + " ";
+    temp.addEventListener('click', () => {displayValue = i;
+        updateDisplay();
+    })
     digits.appendChild(temp);
 }
+
+let display = document.querySelector('.display');
+let displayValue = 0;
+function updateDisplay(){
+    display.textContent = displayValue.toString();
+}
+updateDisplay();
+
+let c = document.querySelector('.clear');
+    c.addEventListener('click', () => {
+        displayValue = 0;
+        updateDisplay();})

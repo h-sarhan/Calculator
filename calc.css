@@ -1,17 +1,46 @@
 
 .calculator{
     display: grid;
-    grid-template-columns: repeat(4,20px);
+    grid-template-columns: repeat(4,50px);
+    grid-auto-rows: 50px;
+    grid-gap: 3px;
 
+}
+.calculator  button{
+    height:50px;
+    width: 50px;
 }
 .digits{
     display: grid;
-    grid-template-columns: repeat(4,20px);
+    grid-template-columns: repeat(4,50px);
+    grid-gap: 3px;
 }
-div{
-    margin: 2px;
+.equal{
+    grid-column:4/5;
+    grid-row:4/5;
+   
+
 }
-button{
-    margin: 2px;
-    padding: 10px;
+
+.equal button{
+    background-color: rgb(0, 255, 0);
+    width: 53px;
+}
+
+.display{
+    width: 209px;
+    font-size: 42px;
+    text-align: end;
+}
+.clear{
+    grid-column: 3/4;
+    grid-row: 4/5;
+ 
+
+}
+
+.clear button{
+    width: 53px;
+    background-color: red;
+
 }
